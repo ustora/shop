@@ -1,0 +1,42 @@
+body{font-family: 'Roboto', sans-serif; background-color: #f9f9f9;}
+/* header */
+.header .nav-link{color: #000 !important; font-weight: 500;}
+.header .nav-link .fa{color: #2196f3!important; margin-right: 5px;}
+.header .nav-item{padding-left: 24px;}
+.header .logo{padding-bottom: 29px;}
+/* end header */
+
+/* menu */
+.menu .bg-light{background-color: #2196f3 !important;}
+.menu .nav-link{color: #fff !important;}
+.menu .nav-item{margin-right: 25px;}
+.menu .nav-item.active, .menu .nav-item:hover .nav-link{background-color: rgba(255,255,255,.1); color: #fff;}
+.menu form .fa{color: #fff !important;}
+.menu.active-menu{position: fixed; top: 0; left: 0; z-index: 100; width: 100%; transition: 0.4s; -webkit-animation: 0.4s;}
+/* end menu */
+
+/* content */
+.content .jumbotron-fluid{padding: 0; background-color: #fff;}
+.content form .form-control{position: relative; height: 50px; border: none; font-size: 20px; border-bottom: 3px solid #eee; border-radius: 0; transition: 0.5s ease-in-out;}
+.content form .form-control.md-textarea{height: 100px;}
+.content form .form-control:focus{border-bottom: 3px solid  #2196f3;}
+.content form label{position: absolute; top: 0; font-size: 18px; line-height: 50px; padding-left: 14px; color: #888;}
+.content form .form-control:focus + label{top:-40px; font-size: 14px; color: #2196f3; transition: 0.5s ease-in-out; padding: 3px;}
+.content .contact{background-color: #103f6d;}
+.content .contact ul li{list-style: none; margin-left: -45px; line-height: 40px; font-size: 15px;}
+.content .text-center.mt-4{display: flex; justify-content: space-around;}
+.content .text-center.mt-4 .fa{border: 1px solid #2196f3; border-radius: 50%; padding: 17px; background-color: #2196f3; color: #fff;}
+/* end content */
+
+/* footer */
+.footer-v1 a{text-decoration: none;}
+.footer-v1.bg-img{background-color: #3e4551!important; background-repeat: repeat;}
+.footer-v1 .headline{display: block; margin: 10px 0 25px 0; border-bottom: 1px dotted #e4e9f0; color: white; font-size: 20px;}
+.footer-v1 .headline p{margin: 0 0 -2px 0; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid #7e57c2;}
+.footer-v1 .link-list > li{padding: 7px 0px;}
+.footer-v1 .link-list > li > a , .link-list > li> i{color:#eee; font-size: 16px;}
+/* end footer */
+
+/* back-to-top */
+.back-to-top .fa{font-size: 30px; border: 1px solid #f9f9f9; border-radius: 50%; padding: 20px; cursor: pointer; background-color: silver; position: fixed; bottom: 20px; right: 20px; z-index: 1100;}
+/* end back-to-top */
