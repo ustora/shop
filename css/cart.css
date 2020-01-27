@@ -16,7 +16,15 @@ body{font-family: 'Roboto', sans-serif;}
 /* end menu */
 
 /* content */
-.content .checkout .btn-check:hover a{box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); transition: 0.5s;}
+.content table{border: 1px solid #ccc; border-collapse: collapse; margin: 0; padding: 0; width: 100%; table-layout: fixed;}
+.content table caption{font-size: 1.5em; margin: .5em 0 .75em;}
+.content table tr{background-color: #f8f8f8; border: 1px solid #ddd; padding: .35em;}
+.content table th, table td{padding: .625em; text-align: center;}
+.content table th{font-size: .85em; letter-spacing: .1em; text-transform: uppercase;}
+.content table td img:nth-child(1){width: 100%;}
+.content table caption{padding-top: .75rem; padding-bottom: .75rem; color: #6c757d; text-align: left; caption-side: top;}
+.content .checkout .sum{font-size: 1.5em;}
+.content .checkout div:nth-child(2){font-size: 1.5em; color: red; font-weight: 700;}
 /* end content */
 
 /* footer */
@@ -31,3 +39,16 @@ body{font-family: 'Roboto', sans-serif;}
 /* back-to-top */
 .back-to-top .fa{font-size: 30px; border: 1px solid #f9f9f9; border-radius: 50%; padding: 20px; cursor: pointer; background-color: silver; position: fixed; bottom: 20px; right: 20px;}
 /* end back-to-top */
+
+
+/* responsive */
+
+@media screen and (max-width: 800px){
+    .content table{border: 0;}
+    .content table caption{font-size: 1.3em;}
+    .content table thead{border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+    .content table tr{border-bottom: 3px solid #ddd; display: block; margin-bottom: .625em;}
+    .content table td{border-bottom: 1px solid #ddd; display: block; font-size: .8em; text-align: right;}
+    .content table td::before{content: attr(data-label); float: left; font-weight: bold; text-transform: uppercase;}
+    .content table td:last-child{border-bottom: 0;}
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Trang chủ</title> <!-- Required meta tags -->
+    <title>Trang giỏ hàng</title> <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
 </head>
 
@@ -108,82 +108,52 @@
     <!-- content -->
     <div class="content ">
         <div class="container">
-            <div class="table-responsive-sm">
-                <!-- table -->
-                <table class="table product-table text-center">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Tên sản phẩm</th>
-                            <th>Màu sắc</th>
-                            <th>Gía</th>
-                            <th>Số lượng</th>
-                            <th>Số tiền</th>
-                            <th>Thao tác</th>
-                        </tr>
-                    </thead>
-                    <tbody class="align-items-center">
-                        <tr>
-                            <td><img src="images/asus.jpg" class="img-fluid h-25" alt=""></td>
-                            <td>iPhone</td>
-                            <td>Màu trắng</td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <input type="number" value="1">
-                            </td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Xóa sản phẩm khỏi giỏ hàng">
-                                    X
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="images/asus.jpg" class="img-fluid h-25" alt=""></td>
-                            <td>iPhone</td>
-                            <td>Màu trắng</td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <input type="number" value="1">
-                            </td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Xóa sản phẩm khỏi giỏ hàng">
-                                    X
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="images/asus.jpg" class="img-fluid h-25" alt=""></td>
-                            <td>iPhone</td>
-                            <td>Màu trắng</td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <input type="number" value="1">
-                            </td>
-                            <td>16.990.000đ</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Xóa sản phẩm khỏi giỏ hàng">
-                                    X
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
+            <table class="shadow p-3 mb-5 bg-white rounded">
+                <caption>Giỏ hàng của bạn</caption>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Màu sắc</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Tổng sản phẩm</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/headphone-1.jpg" alt="">
+                        </td>
+                        <td data-label="Sản phẩm">Headphones</td>
+                        <td data-label="Màu sắc">Trắng</td>
+                        <td data-label="Giá">1.190.000đ</td>
+                        <td data-label="Số lượng">
+                            <div id="field1">
+                                <button type="button" id="sub" class="sub">-</button>
+                                <input type="number" id="1" value="1" min="1" max="100" />
+                                <button type="button" id="add" class="add">+</button>
+                            </div>
+                        </td>
+                        <td data-label="Tổng sản phẩm">1.190.000đ</td>
+                        <td><button class="btn btn-primary"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                    </tr>
 
-                <!-- end table -->
-            </div>
-
-            <div class="row mt-5 checkout">
-                <div class="col-md-4"></div>
-                <div class="col-md-2 pt-3">Tổng cộng: </div>
-                <div class="col-md-2 pt-3">50.000.000đ</div>
-                <div class="col-md-4 d-flex justify-content-end btn-check">
-                    <button class="btn btn-primary shadow p-3 mb-5 rounded">Tiến hành thanh toán</button>
+                </tbody>
+            </table>
+            <hr>
+            <div class="row checkout">
+                <div class="col-lg-6 sum">Tổng cộng:</div>
+                <div class="col-lg-3 text-right">1.100.000đ</div>
+                <div class="col-lg-3 text-right">
+                    <a href="" class="btn btn-primary"> Tiến hành thanh toán</a>
                 </div>
             </div>
+            <!-- end table -->
         </div>
+
+    </div>
     </div>
 
     <!-- end content -->
@@ -264,6 +234,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
+    <script type="text/javascript">
+        $('.add').click(function () {
+            if ($(this).prev().val() < 100) {
+                $(this).prev().val(+$(this).prev().val() + 1);
+            }
+        });
+        $('.sub').click(function () {
+            if ($(this).next().val() > 1) {
+                if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+            }
+        });
+    </script>
 </body>
 
 </html>

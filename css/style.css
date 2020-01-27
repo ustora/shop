@@ -63,7 +63,7 @@ body{font-family: 'Roboto', sans-serif;}
     .content .carousel-item img{height: 150px}
     .content .title, .content .last-item .last-item-title{font-size: 30px;}
     .content .product-news img{height: 200px;}
-    .content ._2button.mt-3 .btn{font-size: 13px;}
+    .content ._2button.mt-3 .btn{font-size: 10px;}
 }
 
 @media (min-width: 575px) and (max-width: 992px){
