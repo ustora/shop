@@ -18,12 +18,13 @@ body{font-family: 'Roboto', sans-serif;}
 /* content */
 .content table{border: 1px solid #ccc; border-collapse: collapse; margin: 0; padding: 0; width: 100%; table-layout: fixed;}
 .content table caption{font-size: 1.5em; margin: .5em 0 .75em;}
-.content table tr{background-color: #f8f8f8; border: 1px solid #ddd; padding: .35em;}
+.content table tr{background-color: #fff; border: 1px solid #ddd; padding: .35em;}
 .content table th, table td{padding: .625em; text-align: center;}
 .content table th{font-size: .85em; letter-spacing: .1em; text-transform: uppercase;}
 .content table td img:nth-child(1){width: 100%;}
 .content table caption{padding-top: .75rem; padding-bottom: .75rem; color: #6c757d; text-align: left; caption-side: top;}
 .content .checkout .sum{font-size: 1.5em;}
+.content table #field1 input{width: 50px;}
 .content .checkout div:nth-child(2){font-size: 1.5em; color: red; font-weight: 700;}
 /* end content */
 
