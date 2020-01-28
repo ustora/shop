@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Trang giỏ hàng</title> <!-- Required meta tags -->
+    <title>Trang chủ</title> <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,13 +38,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">
                                 <span class="fa fa-user"></span>
                                 <span>Đăng nhập</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal1">
                                 <span class="fa fa-user-circle"></span>
                                 <span>Đăng ký</span>
                             </a>
@@ -87,7 +88,7 @@
                             <a class="nav-link" href="#">Đơn hàng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="checkout.html">Thanh toán</a>
+                            <a class="nav-link" href="#">Thanh toán</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Liên hệ</a>
@@ -106,59 +107,99 @@
     <!-- end menu -->
 
     <!-- content -->
-    <div class="content ">
+    <div class="content">
         <div class="container">
-            <table class="shadow p-3 mb-5 bg-white rounded">
-                <caption>Giỏ hàng của bạn</caption>
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Sản phẩm</th>
-                        <th scope="col">Màu sắc</th>
-                        <th scope="col">Giá</th>
-                        <th scope="col">Số lượng</th>
-                        <th scope="col">Tổng sản phẩm</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="images/headphone-1.jpg" alt="">
-                        </td>
-                        <td data-label="Sản phẩm">Headphones</td>
-                        <td data-label="Màu sắc">Trắng</td>
-                        <td data-label="Giá">1.190.000đ</td>
-                        <td data-label="Số lượng">
-                            <div id="field1">
-                                <button type="button" id="sub" class="sub">-</button>
-                                <input type="number" id="1" value="1" min="1" max="100" />
-                                <button type="button" id="add" class="add">+</button>
-                            </div>
-                        </td>
-                        <td data-label="Tổng sản phẩm">1.190.000đ</td>
-                        <td><button class="btn btn-primary"><i class="fa fa-times" aria-hidden="true"></i></button></td>
-                    </tr>
+            <div class="row">
+                <div class="col-md-6 info-user">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Thông tin khách hàng</h3>
+                            <hr>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputUsername4">Họ tên</label>
+                                        <input type="text" class="form-control" id="inputUsername4">
+                                    </div>
+                                </div>
 
-                </tbody>
-            </table>
-            <hr>
-            <div class="row checkout">
-                <div class="col-lg-6 sum">Tổng cộng:</div>
-                <div class="col-lg-3 text-right">1.100.000đ</div>
-                <div class="col-lg-3 text-right">
-                    <a href="" class="btn btn-primary"> Tiến hành thanh toán</a>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputAddress">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputPhone">Số điện thoại</label>
+                                    <input type="text" class="form-control" id="inputPhone">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Ghi chú</label>
+                                <textarea class="form-control" name="" id="" rows="5"></textarea>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 info-product">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Thông tin đơn hàng</h3>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-lg">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Sản phẩm</th>
+                                        <th scope="col" class="text-right">Tổng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Headphones</td>
+                                        <td class="text-right">1.190.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">iPhone</td>
+                                        <td class="text-right">30.190.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tổng đơn hàng</th>
+                                        <th class="text-right">31.380.000đ</th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="col-md-12 text-right mt-5">
+                            <button class="btn btn-primary">Đặt hàng</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- end table -->
         </div>
-
     </div>
-    </div>
-
     <!-- end content -->
 
 
+
+
+    <!-- add 'footer' snippet in css -->
     <div class="footer-v1 bg-img mt-5">
         <div class="footer no-margin pt-5">
             <div class="container">
@@ -228,24 +269,69 @@
     </div>
 
 
+    <!-- modal-sign-up -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng nhập vào hệ thống</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập" class="form-control">
+                    <input type="password" placeholder="Mật khẩu" class="form-control mt-3"> </div>
+                <div class="rpass mt-2 p-3 text-right">
+                    <a href="">Quên mật khẩu</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay về</button>
+                    <button type="button" class="btn btn-primary">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng ký sử dụng hệ thống</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập" class="form-control">
+                    <input type="password" placeholder="Mật khẩu" class="form-control mt-3">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay về</button>
+                    <button type="button" class="btn btn-primary">Đăng ký</button>
+                </div>
+                <div class="modal-signup text-center border-top pt-3 p-3">
+                    <p>Bằng việc đăng ký, bạn đã đồng ý với Ustora về <a href="">Điều khoản dịch vụ</a> và <a
+                            href="">Chính sách bảo mật</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal -->
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
-    <script type="text/javascript">
-        $('.add').click(function () {
-            if ($(this).prev().val() < 100) {
-                $(this).prev().val(+$(this).prev().val() + 1);
-            }
-        });
-        $('.sub').click(function () {
-            if ($(this).next().val() > 1) {
-                if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-            }
-        });
-    </script>
 </body>
 
 </html>
