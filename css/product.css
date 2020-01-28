@@ -20,15 +20,15 @@ body{font-family: 'Roboto', sans-serif;}
 
 /* relate product */
 .relate-product .title{font-family: 'Raleway', sans-serif; font-size: 50px; font-weight: 100;}
-.relate-product .carousel-item img{width: 100%; height: 310px}
 .relate-product ._2button .btn{width: 45%; font-size: 14px;}
 .relate-product .carousel-item{transition: transform 2s ease, opacity .5s ease-out}
-.relate-product .product-news>div[class*="col-"]{display: flex; flex: 1 0 auto;}
-.relate-product .carousel-inner>.product-news.active,
-.relate-product .carousel-inner>.product-news.next,
-.relate-product .carousel-inner>.product-news.prev{display: flex;}
-.relate-product .carousel-inner>.product-news.active.left,
-.relate-product .carousel-inner>.product-news.active.right{opacity: 0.5; display: flex;}
+.relate-product .carousel-inner .product-news .card-title{font-size: 1.5em;}
+.relate-product .product-news > div[class*="col-"]{display: flex; flex: 1 0 auto;}
+.relate-product .carousel-inner > .product-news.active,
+.relate-product .carousel-inner > .product-news.next,
+.relate-product .carousel-inner > .product-news.prev{display: flex;}
+.relate-product .carousel-inner > .product-news.active.left,
+.relate-product .carousel-inner > .product-news.active.right{opacity: 0.5; display: flex;}
 
 
 

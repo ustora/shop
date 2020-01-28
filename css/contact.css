@@ -23,9 +23,20 @@ body{font-family: 'Roboto', sans-serif; background-color: #f9f9f9;}
 .content form label{position: absolute; top: 0; font-size: 18px; line-height: 50px; padding-left: 14px; color: #888;}
 .content form .form-control:focus + label{top:-40px; font-size: 14px; color: #2196f3; transition: 0.5s ease-in-out; padding: 3px;}
 .content .contact{background-color: #103f6d;}
-.content .contact ul li{list-style: none; margin-left: -45px; line-height: 40px; font-size: 15px;}
-.content .text-center.mt-4{display: flex; justify-content: space-around;}
-.content .text-center.mt-4 .fa{border: 1px solid #2196f3; border-radius: 50%; padding: 17px; background-color: #2196f3; color: #fff;}
+.content .contact ul li{list-style: none; margin-left: -45px; line-height: 40px; font-size: 1.1em;}
+.content .contact .hover-icon ul{display: flex; justify-content: space-between;}
+.content .contact .hover-icon ul li{width: 45px; height: 45px; cursor: pointer; border-radius: 50%; border: 3px solid #fff; display: flex ; align-items: center; justify-content: center;}
+.content .contact .hover-icon .fa{color: #fff;}
+.content .contact .hover-icon ul li:hover .fa-facebook{color: #3b5998; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover:nth-child(1){border: 3px solid #3b5998; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover .fa-twitter{color: #00aced; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover:nth-child(5){border: 3px solid #00aced; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover .fa-instagram{color: #bc2a8d; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover:nth-child(2){border: 3px solid #bc2a8d; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover .fa-skype{color: #a82400; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover:nth-child(3){border: 3px solid #a82400; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover .fa-whatsapp{color: #fb8f3d; transition: all 0.5 ease;}
+.content .contact .hover-icon ul li:hover:nth-child(4){border: 3px solid #fb8f3d; transition: all 0.5 ease;}
 /* end content */
 
 /* footer */

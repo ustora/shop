@@ -22,7 +22,6 @@ body{font-family: 'Roboto', sans-serif;}
 .content .col{margin: 0 !important; padding: 0 !important;}
 .content ._2button .btn{width: 45%; font-size: 14px;}
 .content ._2button-hide .btn{width: 45%; font-size: 14px; display: none;}
-.content .product-news img{height: 250px; width: 100%; object-fit: cover;}
 .content .title, .content .last-item .last-item-title{font-family: 'Raleway', sans-serif; font-size: 50px; font-weight: 100;}
 .content .jumbotron img{width: 100%;}
 .content .saleoff{position: absolute; top: 30%; right: 10%; text-align: right;}
@@ -52,21 +51,9 @@ body{font-family: 'Roboto', sans-serif;}
 
 
 @media (min-width: 768px) and (max-width: 1024px){
-    .content .jumbotron .saleoff .lead{font-size: 15px;}
+    .content .jumbotron .saleoff .lead{font-size: 1.3em;}
 }
 
 @media (max-width: 767px){
     .content .jumbotron .saleoff{display: none;}
-}
-
-@media (max-width: 434px){
-    .content .carousel-item img{height: 150px}
-    .content .title, .content .last-item .last-item-title{font-size: 30px;}
-    .content .product-news img{height: 200px;}
-    .content ._2button.mt-3 .btn{font-size: 10px;}
-}
-
-@media (min-width: 575px) and (max-width: 992px){
-    .content .product-news img{height: 220px;}
-    .content ._2button.mt-3 .btn{font-size: 13px;}
 }
